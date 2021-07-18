@@ -9,8 +9,8 @@ import ru.a18d.mvc.jdbc.DbServiceProvider;
 
 
 @Controller
-public class MyController {
-    private static final Logger logger = LoggerFactory.getLogger(MyController.class);
+public class UserRestController {
+    private static final Logger logger = LoggerFactory.getLogger(UserRestController.class);
 
     @RequestMapping(value = "/get-json-user/{name}", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
