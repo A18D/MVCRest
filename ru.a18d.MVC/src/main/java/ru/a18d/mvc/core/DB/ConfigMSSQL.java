@@ -1,9 +1,11 @@
 package ru.a18d.mvc.core.DB;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
-@Component()
+@Configuration
+@PropertySource("classpath:myApp.properties")
 public class ConfigMSSQL {
     @Value("${connectionDB.login}")
     private String login;

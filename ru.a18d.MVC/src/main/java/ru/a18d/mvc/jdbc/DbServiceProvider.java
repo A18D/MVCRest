@@ -12,8 +12,6 @@ import ru.a18d.mvc.jdbc.dao.UserDaoJdbc;
 import ru.a18d.mvc.jdbc.sessionmanager.SessionManagerJdbc;
 
 public class DbServiceProvider {
-    private static final Logger logger = LoggerFactory.getLogger(DbServiceProvider.class);
-
     public static void main(String[] args) throws Exception {
         User user = getUserByName("Petr");
         System.out.println(user);
