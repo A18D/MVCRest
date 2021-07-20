@@ -8,6 +8,7 @@ public class Config {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(ConfigMSSQL.class);
         ConfigMSSQL bean = context.getBean("configMSSQL", ConfigMSSQL.class);
+        context.close();
         return bean;
     }
 }
